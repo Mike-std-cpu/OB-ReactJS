@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Greeting from './components/pure/greeting'; 
+import Greetingf from './components/pure/greetingF';
 
 function App() {
   return (
@@ -9,8 +10,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           {/*Componente propio greeting.jsx instanciando de la clase Greetings */}
-        <Greeting name="Mike"></Greeting> {/* El componente name fue declarado como una propiuedad que aqui se tomara y se añadira como arguemento*/}
+        {/* <Greeting name="Mike"></Greeting> El componente name fue declarado como una propiuedad que aqui se tomara y se añadira como arguemento */}
           ¡Hola mundo!🚀
+          <Greetingf name="Miguel"></Greetingf>
           
         </p>
         <a
