@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import Greeting from './components/pure/greeting'; 
-import Greetingf from './components/pure/greetingF';
+// import Greeting from './components/pure/greeting'; 
+// import Greetingf from './components/pure/greetingF';
+import TaskListComponent from './components/container/task_list';
 
 function App() {
   return (
@@ -11,9 +12,10 @@ function App() {
         <p>
           {/*Componente propio greeting.jsx instanciando de la clase Greetings */}
         {/* <Greeting name="Mike"></Greeting> El componente name fue declarado como una propiuedad que aqui se tomara y se añadira como arguemento */}
-          ¡Hola mundo!🚀
-          <Greetingf name="Miguel"></Greetingf>
           
+          {/* <Greetingf name="Miguel"></Greetingf> */}
+          {/* Componente de Listado de Tareas */}
+          <TaskListComponent></TaskListComponent>
         </p>
         <a
           className="App-link"
@@ -21,7 +23,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          ¡Hola mundo!🚀
         </a>
       </header>
     </div>
