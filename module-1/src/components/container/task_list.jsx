@@ -1,11 +1,14 @@
+//* Este file coniente la la tarea de ejemplo para verificar que todo nos esta correindo correctamente
+//* Se podria decir que seria nuestro file main, donde instanciaremos todos los componentes de niveles posteriores
+
 import React from 'react'
 import { LEVELS } from '../../models/levels.enum'
 import {Task} from '../../models/task.class'
 import TaskComponent from '../pure/task';
-
+//Este va dentro del app.js
 const TaskListComponent = () => {
 
-    const defaultTask = new Task('Example', 'Default Description', false, LEVELS.NORMAL);
+    const defaultTask = new Task('Example✨', 'Default Description🔥', false, LEVELS.NORMAL);
 
   return (
     <div>

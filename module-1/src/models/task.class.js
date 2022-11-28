@@ -1,3 +1,5 @@
+//* Este file Basicamente tiene una clase de tipo tarea con sus caracteristias que se le mandara un componente inferior llamado task.jsx
+
 import { LEVELS } from "./levels.enum"; // importamos la clase LEVELS de levels.enum.js
 
 export class Task {

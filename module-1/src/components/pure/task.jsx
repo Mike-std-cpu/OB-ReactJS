@@ -1,3 +1,6 @@
+//* Este es un componente que tiene una propiedad task con el contenido que va a pintar los diferentes contenidos HTML
+
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Task } from '../../models/task.class'
@@ -21,6 +24,8 @@ const TaskComponent = ({task}) => {
   )
 }
 
+
+//* Este propTypes contendra las diferentes instancias de las propiedades (props)
 TaskComponent.propTypes = {
     taks: PropTypes.instanceOf(Task)// defininimos que es una instancia de la clase task.js
 }
