@@ -5,12 +5,12 @@ import { Contact } from "../../models/contact.class";
 const ContactComponent = ({contact}) => {
     return(
         <div>
-            <h2>
-                Nombre: { contact.name }
-            </h2>
             <h3>
-                Apellido: { contact.last }
+                Nombre: { contact.name }
             </h3>
+            <h4>
+                Apellido: { contact.lastName }
+            </h4>
             <h4>
                 Email: { contact.email }
             </h4>
