@@ -3,7 +3,7 @@
  Como primeros pasos en react, debemos ir estructurando nuestros componentes para poder ir armando nuestro proyecto. 
  A continuación veremos una estructura basica:
 
-![react-folder](https://raw.githubusercontent.com/Mike-std-cpu/OB-ReactJS/main/Installation/img/folders.jpg)
+![react-folder](https://raw.githubusercontent.com/Mike-std-cpu/OB-ReactJS/main/Information/img/folders.jpg)
  
 1.  Nuestra carpeta **src**  contendra todos los files que nosotros necesitemos, sera nuestra carpeta principal para ir desarrollando nuestro proyecto.
 2.  Tendremos dentro, varias carpetas
@@ -13,7 +13,7 @@
 	4. _Pages_: -
 	5. _Routes_: -
 
-![react-Folders](https://raw.githubusercontent.com/Mike-std-cpu/OB-ReactJS/main/Installation/img/Organizacion-proy.gif)
+![react-Folders](https://raw.githubusercontent.com/Mike-std-cpu/OB-ReactJS/main/Information/img/Organizacion-proy.gif)
 
 > Esta es la estructura basica denstro de nuestros files en el uso de react, se ira complementando el documeno para futuras adqusiciones de conocimiento de este framework.
 
