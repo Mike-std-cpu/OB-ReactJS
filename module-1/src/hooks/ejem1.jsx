@@ -6,7 +6,7 @@
 
 import React, { useState } from 'react'
 
-export const ejem1 = () => {
+export const Ejem1 = () => {
 
     // Valor inicniar para un contador
     const valorIni = 0;
@@ -47,6 +47,29 @@ export const ejem1 = () => {
     }
 
   return (
-    <div>ejem1</div>
+    <div>
+        <h1>
+            Ejemplo de UseState() 👨‍💻
+        </h1>
+        <h2>
+            Contador: { contador }
+        </h2>
+        <h2>
+            Datos de la persona:
+        </h2>
+        <h3>
+            Nombre: { persona.name }
+        </h3>
+        <h4>
+            Email: { persona.email }
+        </h4>
+        {/* Bloque para actualizar los datos con un button */}
+        <button onClick={incrementaContador}>
+            Actualizar
+        </button>
+        <button onClick={actualizarPersona}>
+            Cambiar persona
+        </button>
+    </div>
   )
 }
