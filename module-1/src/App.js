@@ -3,7 +3,8 @@ import './App.css';
 // import Greeting from './components/pure/greeting'; 
 // import Greetingf from './components/pure/greetingF';
 //import TaskListComponent from './components/container/task_list';
-import { Ejem1 } from './hooks/ejem1';
+// import { Ejem1 } from './hooks/ejem1';
+import { Ejem2 } from './hooks/Ejem2'
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
           {/* <TaskListComponent></TaskListComponent> */}
 
         {/* Ejemplo de hooks */}
-        <Ejem1></Ejem1>
+        {/* <Ejem1></Ejem1> */}
+        <Ejem2></Ejem2>
         </p>
         <a
           className="App-link"

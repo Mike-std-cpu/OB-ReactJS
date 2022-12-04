@@ -21,7 +21,7 @@ export const Ejem2 = () => {
         setContador(contador + 1)
     }
 
-    function incrementarDos(){
+    function incrementoDos(){
         setContador2(contador2 + 1)
     }
 
@@ -36,6 +36,19 @@ export const Ejem2 = () => {
 
   
     return (
-    <div>Ejem2</div>
+    <div>
+        <h1> Ejemplo de hooks con useState - useRef - useEffect </h1>
+        <h3> Contador 1: {contador}</h3>
+        <h3> Contador 2: {contador2}</h3>
+        {/* Elemento referenciado */}
+        <h5 ref={miRef}>
+            Ejemplo de elemento referenciado.
+        </h5>
+            {/* botones */}
+        <div>
+        <button onClick={incrementoUno}>Incrementar 1</button>
+        <button onClick={incrementoDos}>Incrementar 2</button>
+        </div>
+    </div>
   )
 }
