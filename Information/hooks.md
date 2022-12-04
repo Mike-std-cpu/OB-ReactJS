@@ -87,4 +87,55 @@ Y verificaremos nuestros _estados_.
 
 ---
 
+## UseRef.
+
+Otro _hook_ muy usado, es el famoso `useRef()` donde nos ayuda a tener controlado el uso de los estdos de los componentes.
+
+> `useRef` devuelve un objeto _ref_ mutable cuya propiedad `.current` se inicializa con el argumento pasado (`initialValue`). El objeto devuelto se mantendrá persistente durante la vida completa del componente.
+
+_Fuentes:_  [beta.react](https://beta.reactjs.org/apis/react/useRef) [React.org](https://es.reactjs.org/docs/hooks-reference.html#useref)
+
+En palabras más faciles, `useRef()` ya que este valor se mantendra referenciado en el _ciclo de vida_ del DOM del sitio. En el ejemplo de este repositorio, se tiene lo siguiente:
+
+````jsx
+const miRef = useRef();
+````
+
+````html
+        <h5 ref={miRef}>
+            Ejemplo de elemento referenciado.
+        </h5>
+````
+
+Dentro del ciclo de vida del DOM del sitio, cada que haya un cambio de estado se hara referencia a este etiqueta `h5` demostrando que cada uno de los cambios realizados, se pueden prevalecerer.
+
+> Más adelante se complementara con el uso del hook `useEffect()`.👨‍💻
+
+---
+## UseEffect.
+
+El hook, `useEffect()` dentro de nuestro código ejecutara siempre un _snippet_. Siempre que haya un cambio en el esatdo en algun componente, se ejecutara.
+
+> Acepta una función que contiene código imperativo, posiblemente código efectivo.
+> Las mutaciones, suscripciones, temporizadores, registro y otros efectos secundarios no están permitidos dentro del cuerpo principal de un componente de función (denominado como _render phase_ de React). Si lo hace, dará lugar a errores confusos e inconsistencias en la interfaz de usuario.
+> En su lugar, use `useEffect`. La función pasada a `useEffect` se ejecutará después de que el renderizado es confirmado en la pantalla. Piense en los efectos como una escotilla de escape de React del mundo puramente funcional al mundo imperativo.Por defecto, los efectos se ejecutan después de cada renderizado completado, pero puede elegir ejecutarlo solo cuando ciertos valores han cambiado.
+
+_Fuentes::_ [React.org](https://es.reactjs.org/docs/hooks-reference.html#cleaning-up-an-effect)
+
+Dentro de nuestro ejemplo de este repositorio, tenemos declarado o siguiente:
+
+````jsx
+  useEffect(() => {
+
+        console.log("Firts: Cambio en el estado del componente")
+        console.log("Mostrando referencia a elemento del DOM:");
+        console.log(miRef)
+
+    })
+````
+
+Dando enfasis al `miRef` cada que haya un cambio dentro del DOM, este ejecutar los `consolee.log()` correspondientes y dando de referenia nuestro hook, ref.
+
+---
+
 🪄 Thanks for watching by [@Mike Andrade](https://github.com/Mike-std-cpu)<img align="right" src="https://media2.giphy.com/media/uL23EgTN7oEweMVy7R/200w.webp?cid=ecf05e47ev3qz7stswwx3ottvkvinyaw9bq36k6jao82l1ts&rid=200w.webp&ct=s" width="30">
