@@ -35,11 +35,21 @@ export const Ejem2 = () => {
 
     //? Caso 2: Ejecutar solo en algunos casos especificados. en este caso, cuando el contador 1, si es en el caso 2, NO ABRA EJECUCIÓN
     // Hora solo se estaran registrando los cambios que se hagan en el caso 1 marcado
+    // useEffect(() => {
+    //     console.log("Firts: Cambio en el estado del contador 1")
+    //     console.log("Mostrando referencia a elemento del DOM:");
+    //     console.log(miRef)
+    // }, [contador])
+
+        //? Caso 3: Ejecutar solo en algunos casos especificados. en este caso, cuando el contador 1 o contador 2
+
     useEffect(() => {
-        console.log("Firts: Cambio en el estado del contador 1")
+        console.log("Firts: Cambio en el estado del contador 1/contador 2")
         console.log("Mostrando referencia a elemento del DOM:");
         console.log(miRef)
-    }, [contador])
+    }, [contador, contador2])
+
+
     
     
 
