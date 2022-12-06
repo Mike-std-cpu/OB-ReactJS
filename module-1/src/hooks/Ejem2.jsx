@@ -1,5 +1,5 @@
 /**
- * Ejmplo de uso de otros hooks:
+ * Ejmplo de uso de otros hooks 2:
  * useState()
  * useRef(): Identificar elementos dentro de la vista
  * useEffect() : Controlar vistas
