@@ -3,7 +3,6 @@
  * useState()
  * useContext(): Poder utilizar el contexto y pasarlo a otros componentes.
  */
-
 import React , { useState, useContext } from 'react'
 
 /**
@@ -15,7 +14,7 @@ import React , { useState, useContext } from 'react'
     //? Se inicializa un estado vacio que se llenara con los datos del contexto que le mandemos  del padre.
     const miContexto = React.createContext(null);
 
-export const Componente1 = () => {
+const Componente1 = () => {
 
     const state = useContext(miContexto);
 
@@ -33,7 +32,7 @@ export const Componente1 = () => {
   );
 }
 
-export const Componente2 = () => {
+ const Componente2 = () => {
 
     const state = useContext(miContexto);
 
@@ -46,31 +45,33 @@ export const Componente2 = () => {
     );
   }
 
-  export const  MiComponenteContexto = () => {
+  export default function MiComponenteContexto() {
 
-    const estadoInicial = {
+      const estadoInicial = {
         token: '12345589',
         session: 1
     }
 
     // Estado del componente
-
     const [sessionData, setSessionData] = useState(estadoInicial);
 
     function actualizasSesion(){
         setSessionData(
             {
                 token: 'JET159863479',
-                session: sessionData.sesion + 1
+                session: sessionData.session + 1
             }
-        )
+        );
     }
+    
     return (
-      <miContexto.provider value={sessionData}>
+      <miContexto.Provider value={sessionData}>
         {/* Todo lo que este aqui dentro pude leer los datos de session data, ademas de actualziarserse
         Si se actualzia los copnentes de este aparte tambien se actualzian */}
+        <h1>Ejemplo de useState & useContext</h1>
         <Componente1></Componente1>
-        <button onClick={actualizasSesion}></button>
-      </miContexto.provider>
-    );
+        <button onClick={actualizasSesion}>Actualizar Sesion</button>
+      </miContexto.Provider>
+
+    )
   }
