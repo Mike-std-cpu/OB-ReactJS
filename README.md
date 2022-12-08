@@ -6,6 +6,8 @@ Los siguientes enlaces estrcuturan información _complementaria_ de lo manejado 
 1. [Instalación de un proyecto React](https://github.com/Mike-std-cpu/OB-ReactJS/blob/main/Information/How.md)
 2. [Estructura de un proyecto React](https://github.com/Mike-std-cpu/OB-ReactJS/blob/main/Information/react-structure.md)
 3. [Hooks](https://github.com/Mike-std-cpu/OB-ReactJS/blob/main/Information/hooks.md)
+4. [States](https://github.com/Mike-std-cpu/OB-ReactJS/blob/main/Information/states.md)
+5.[Snippets](https://github.com/Mike-std-cpu/OB-ReactJS/blob/main/Information/React.md)
 
 <p>
 <img src="https://www.patterns.dev/img/reactjs/react-logo@3x.svg" align="center"></img>
