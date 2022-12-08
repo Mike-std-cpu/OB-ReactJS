@@ -33,3 +33,7 @@ npm i create-react-app "NombreApp"
 ````
 
 >Podras descargar todas las dependencias necesarias para usar `React`
+
+---
+
+🪄 Thanks for watching by [@Mike Andrade](https://github.com/Mike-std-cpu)<img align="right" src="https://media2.giphy.com/media/uL23EgTN7oEweMVy7R/200w.webp?cid=ecf05e47ev3qz7stswwx3ottvkvinyaw9bq36k6jao82l1ts&rid=200w.webp&ct=s" width="30">
