@@ -8,6 +8,7 @@ Los siguientes enlaces estrcuturan información _complementaria_ de lo manejado 
 3. [Hooks](https://github.com/Mike-std-cpu/OB-ReactJS/blob/main/Information/hooks.md)
 4. [States](https://github.com/Mike-std-cpu/OB-ReactJS/blob/main/Information/states.md)
 5.[Snippets](https://github.com/Mike-std-cpu/OB-ReactJS/blob/main/Information/React.md)
+6.[JSX](https://github.com/Mike-std-cpu/OB-ReactJS/blob/main/Information/jsx.md)
 
 <p>
 <img src="https://www.patterns.dev/img/reactjs/react-logo@3x.svg" align="center"></img>
